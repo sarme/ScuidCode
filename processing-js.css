@@ -237,3 +237,7 @@ ul.tweet_list li,ul.tweet_list li:hover {
 .tweet_list .tweet_avatar {
   padding-right: .5em; float: left;
 }
+
+p.custom_text {
+	margin-top: 100px;
+}
