@@ -1,0 +1,61 @@
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px 0 14px;
+    text-decoration: none;
+  }
+
+  #navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  #contactbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Contact links */
+  #contactbar > * {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2px 14px 4px 14px;
+    text-decoration: none;
+    color: #757575!important;
+  }
+
+  .padding-right-4px{
+      padding-right: 4px;
+  }
+
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  /* .sticky + .content {
+    padding-top: 100px;
+  } */
+
+  .sticky + .contactbar{
+    margin-top: 36px;
+  }
+
+  .top-filler{
+    height: 100px;
+  }
