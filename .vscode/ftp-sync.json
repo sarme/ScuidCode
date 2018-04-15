@@ -1,0 +1,29 @@
+{
+    "remotePath": "./",
+    "host": "ftp.scuidcode.com",
+    "username": "sarme@scuidcode.com",
+    "password": "auy@;zzCp,-5?cZriRE=9=h_TvWE5s~PtsH",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store",
+        "\\.ftpquota",
+        "\\.htaccess",
+        "\\.gitattributes",
+        "\\.well-known",
+        "\\README.md"
+    ],
+    "generatedFiles": {
+        "uploadOnSave": false,
+        "extensionsToInclude": [],
+        "path": ""
+    }
+}
