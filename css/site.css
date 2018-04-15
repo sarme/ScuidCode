@@ -5,7 +5,7 @@ html{
     font-size:15px;
     line-height:22.5px;
     overflow-x:hidden;
-    text-size-adjust:100%;
+    text-size-adjust:100%;    
 }
 
 body{
@@ -40,4 +40,22 @@ hr {
 
 .title{
     font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: top;
+    font-size: 18px;
+    height: 100px;
+}
+
+#life{
+    margin-right: 30px;
+}
+
+#life img{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+    max-width: 610px;
 }
