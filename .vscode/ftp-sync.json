@@ -15,11 +15,12 @@
         "\\.vscode",
         "\\.git",
         "\\.DS_Store",
-        "\\.ftpquota",
-        "\\.htaccess",
+        ".ftpquota",
+        ".htaccess",
         "\\.gitattributes",
-        "\\.well-known",
-        "\\README.md"
+        ".well-known",
+        "README.md",
+        "cgi-bin"
     ],
     "generatedFiles": {
         "uploadOnSave": false,
