@@ -1,71 +1,224 @@
 <!DOCTYPE html>
 <html>
+  <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="processing-js.css" type="text/css" />
-    <script src="processing.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<script>
-
-</script>
+<link rel="stylesheet" href="css/site.css" type="text/css" />
+<link rel="stylesheet" href="css/processing-js.css" type="text/css" />
+<link rel="stylesheet" href="css/navbar.css" type="text/css" />
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
 </style>
+</head>
 <body class="w3-black">
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo">ScuidCode</h1>
-    <p>Game Designer and Programmer</p>
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Christopher Arme</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <!--<p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>-->
-	
-	<header class="w3-container w3-center w3-black" style="margin-top:100px;">
-	<h1 class="w3-xxxlarge">Projects and Demos</h1>
-	</header>
-	
-<div class="w3-center w3-padding-16">
-	<p class="w3-wide w3-text-light-grey custom_text">Test Game: "Running Legend"</p>
-	<canvas width="800" height="500" data-processing-sources="Assignment8Game\Assignment8Game.pde Assignment8Game\AboutScreen.pde Assignment8Game\GameControl.pde Assignment8Game\GameOverScreen.pde Assignment8Game\Ground.pde Assignment8Game\Obstacles.pde Assignment8Game\Player.pde Assignment8Game\StartScreen.pde Assignment8Game\GameScreen.pde"></canvas>
-	<p class="w3-wide w3-text-light-grey custom_text">Object Oriented Programming Practice: Aquarium</p>
-	<canvas width="800" height="500" data-processing-sources="Assignment7OOPAquarium\Assignment7OOPAquarium.pde Assignment7OOPAquarium\Bubbles.pde Assignment7OOPAquarium\Crab.pde Assignment7OOPAquarium\Fish.pde Assignment7OOPAquarium\GiantSquid.pde Assignment7OOPAquarium\SeaLife.pde Assignment7OOPAquarium\Seaweed.pde"></canvas>
-</div>
-
-<div class="w3-center w3-padding-16">
-	<p class="w3-wide w3-text-light-grey custom_text">Early Demo of Project: CLAW</p>
-	<video width="1024" height="768" controls autoplay muted loop>
-	<source src="Runner 2018-03-22 12-43-19-90.mp4" type="video/mp4"></source>
-	</video>
-</div>
-    
-	<div>
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Other Works</h3>  
-    <p><a href="https://www.himesservice.com/"><span class="w3-large w3-margin-right">Himes Service Company Website</span></a></p>
-    <p>Design and Implementation</p><br>
-	<a href="https://www.himesservice.com/"><img src="HSCHomePage.png" class="w3-margin-right" style="width:500px"></a>
-  <!-- End About Section -->
+<div class="container-fluid sticky">
+  <div id="navbar" class="row">
+    <a href="#aboutme">About Me</a>
+    <a href="#projects">Game Projects and Demos</a>
+    <a href="#web">Websites</a>
+    <a href="#guitar">Guitar</a>
+    <a href="#life">My Life <i>(warning: contains me)</i></a>
   </div>
+  <div id="contactbar" class="contactbar row">
+      <span><i class="fa fa-map-marker fa-fw"></i>Texas, USA</span>
+      <span><i class="fa fa-phone fa-fw"></i><a href="tel:+12146846025">214-684-6025</a></span>
+      <span><i class="fa fa-envelope fa-fw padding-right-4px"></i><a href="mailto:christopher.arme@gmail.com">christopher.arme@gmail.com</a></span>
+    </div>
+  </div>
+<div class="main">
+
+    <div class="container-fluid" id="aboutme">
+        <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+        <div class="row">
+            <div class="col-md-3">
+              <img src="images\Brick Wall Smile1.jpg" class="img-me">
+            </div>
+            <div class="col-md-9 text-left">
+                <h2 class="margin-bottom-zero">Christopher Thorn Arme</h2>
+                <hr style="width:200px" class="w3-opacity">
+                <p class="title margin-bottom-20px">Game Designer and Programmer</p>
+                <p class="font-console">Hello. <span id="txtName">My name is Chris.</span></p>
+                <p class="font-console">I like to make things: games, code, art, music, laughter.  ScuidCode is my home on the Interwebs.</p>
+                <p class="font-console">I'm a full-time college student at <a href="https://www.smu.edu/" target="_blank" title="SMU">SMU</a>, majoring in <a href="https://www.smu.edu/Meadows/AreasOfStudy/CreativeComputation" target="_blank" title="Creative Computation">Creative Computation</a><br>as part of <a href="https://www.smu.edu/Meadows/Support/MeadowsScholars" target="_blank" title="Meadows Scholars">The Meadows Scholars Program</a>.</a></p>
+                <p class="font-console">Before completing high school in 2017 with a 4.0 GPA, I attended <a href="http://www.collin.edu/" target="_blank">Collin College</a> as part of a dual-enrollment program. At Collin College I studied Japanese, Drawing, and Symbolic Logic.</p>
+                <p class="font-console">I have studied guitar (classical and electric) for over 10 years. In 2015, I took first place in the <a href="https://www.mountainviewcollege.edu/cd/instruct-divisions/mvc/arco/music/guitarfest/pages/competitions.aspx" target="_blank">Mountain View College guitar festival competition</a>, senior division. I have also taught guitar and participated as a member of the guitar orchestra at <a href="https://alt.brookhavencollege.edu/asp/course-schedules/non-credit/music.aspx">Brookhaven College</a>.</p>
+                <p class="font-console">In 2014, my team and I were world finalists in <a href="https://www.odysseyofthemind.com/" target="_blank">Odyssey of the Mind</a> after placing in regional and state competitions. We placed 15th in the world and won a <a href="https://www.odysseyofthemind.com/wf2017/awards-and-ceremonies" target="_blank">Ranatra Fusca Award</a> for outstanding creativity. I continue to participate in Odyssey of the Mind as a regional and state judge.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="projects">
+      <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+      <div class="row">
+          <div class="col-md-12 text-left">
+            <h2 class="">Game Projects and Demos</h2>
+            <hr style="width:200px" class="w3-opacity">
+          </div>
+        </div>
+      <div class="row">
+          <div class="col-md-12 text-left">
+            <p class="title margin-bottom-20px">Running Legend</p>
+            <p class="font-console">This game started as a class exercise and draws inspiration from <a href="http://canabalt.com/" target="_blank">Canabalt</a> by Finji.</p>
+            <p class="font-console">Written in <a href="https://processing.org/" target="_blank">Processing</a>, this game demonstrates basic gaming mechanics, physics, and user input.</p>
+            <p class="font-console">This example is fully playable in your browser! Just smash and hold the spacebar!</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p class="w3-wide w3-text-light-grey custom_text">Test Game: Running Legend</p>
+              <canvas width="800" height="500" data-processing-sources="Assignment8Game\Assignment8Game.pde Assignment8Game\AboutScreen.pde Assignment8Game\GameControl.pde Assignment8Game\GameOverScreen.pde Assignment8Game\Ground.pde Assignment8Game\Obstacles.pde Assignment8Game\Player.pde Assignment8Game\StartScreen.pde Assignment8Game\GameScreen.pde"></canvas>
+          </div>
+      </div>
+
+      <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+      <div class="row">
+          <div class="col-md-12 text-left">
+            <p class="title margin-bottom-20px">Aquarium</p>
+            <p class="font-console">You like fish?  I like fish (and squids).</p>            
+            <p class="font-console">Written in <a href="https://processing.org/" target="_blank">Processing</a>, this demo is primarily an exercise in object-oriented programming. The actors in the scene are procedurally generated, so you'll never get exactly the same view. The fish-bobbing, bubble-jiggling, and weed-swaying are all calculated using a sine function.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p class="w3-wide w3-text-light-grey custom_text">Test Game: Running Legend</p>
+              <canvas width="800" height="500" data-processing-sources="Assignment7OOPAquarium\Assignment7OOPAquarium.pde Assignment7OOPAquarium\Bubbles.pde Assignment7OOPAquarium\Crab.pde Assignment7OOPAquarium\Fish.pde Assignment7OOPAquarium\GiantSquid.pde Assignment7OOPAquarium\SeaLife.pde Assignment7OOPAquarium\Seaweed.pde"></canvas>
+          </div>
+      </div>
+
+      <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+      <div class="row">
+          <div class="col-md-12 text-left">
+            <p class="title margin-bottom-20px">CLAW</p>
+            <p class="font-console">This is a proof-of-concept I was playing with for a game.</p>
+            <p class="font-console">Written in <a href="https://processing.org/" target="_blank">Processing</a>, I wanted to explore the basic mechanics for tracking and manipulating objects.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p class="w3-wide w3-text-light-grey custom_text">Early Demo of Project: CLAW</p>
+              <video width="1024" height="768" controls autoplay muted loop>
+              <source src="Runner 2018-03-22 12-43-19-90.mp4" type="video/mp4"></source>
+              </video>
+          </div>
+      </div>
+
+      <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+      <div class="row">
+          <div class="col-md-12 text-left">
+            <p class="title margin-bottom-20px">dstroy!</p>
+            <p class="font-console">Here's a game I wrote a few years back using <a href="https://www.clickteam.com/multimedia-fusion-2" target="_blank">Multimedia Fusion 2</a>. In this game, I wanted to recreate the classic <a href="https://en.wikipedia.org/wiki/Asteroids_(video_game)" target="_blank">Asteroids</a> experience.</p>
+            <p class="font-console">Sorry, no web playable code for this one.  You can, however, download the executable <a href="files/chris arme dstroy! 3.exe">here.</a></p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p class="w3-wide w3-text-light-grey custom_text">dstroy!</p>
+              <img src="images/dstroy2.png">
+          </div>
+      </div>
+
+      <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+      <div class="row">
+          <div class="col-md-12 text-left">
+            <p class="title margin-bottom-20px">Poké Blocks</p>
+            <p class="font-console">Another oldie using <a href="https://www.clickteam.com/multimedia-fusion-2" target="_blank">Multimedia Fusion 2</a>. This one is based on another class arcade game, <a href="https://en.wikipedia.org/wiki/Breakout_(video_game)" target="_blank">Breakout</a>.</p>
+            <p class="font-console">Again, no web playable code for this one.  You can download the executable <a href="files/chris arme, is cool! 3.exe">here.</a></p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p class="w3-wide w3-text-light-grey custom_text">Poké Blocks</p>
+              <img src="images/pokeblocks.png">
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid" id="web">
+        <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+        <div class="row">
+          <div class="col-md-12 text-left">
+            <h2 class="">Websites</h2>
+            <hr style="width:200px" class="w3-opacity">
+          </div>
+        </div>
+        <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+
+        <div class="row">
+            <div class="col-md-6 text-left">
+              <p class="title margin-bottom-20px"><a href="https://www.himesservice.com/" target="_blank">Himes Service Company</a></p>
+              <p class="font-console">Lead Designer, Programmer, Project Manager</p>
+              <p class="font-console">The Summer after high school, I designed and implemented a web site for Himes Service Company. This was my first time designing a web site from scratch. I worked with the customer to define requirements, I produced the initial mock-ups for the web site, and I worked with a team of developers to implement the site. This web site is fully optimized for mobile.</p>
+              <p class="font-console">The site was written in HTML, JavaScript, and CSS using Visual Studio 2017.  The platform is .Net core 1.1 and ASP.NET Core MVC. Various libraries were incorporated including jQuery, Bootstrap, and Font Awesome.  Other tools used include Adobe XD, Adobe Illustrator, and git.
+                  <p class="font-console">You can take a look at my last round of mock-ups <a href="https://xd.adobe.com/view/69359fed-3ab4-4032-b344-0a9dfcfbe830/" target="_blank">here</a>.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="https://www.himesservice.com/" target="_blank"><img src="HSCHomePage.png" style="width:500px"></a>
+            </div>
+        </div>
+
+        <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+        <div class="row">
+            <div class="col-md-6 text-left">
+              <p class="title margin-bottom-20px"><a href="https://www.leadsonline.com" target="_blank">LeadsOnline</a></p>
+              <p class="font-console">QA Tester, Developer</p>
+              <p class="font-console">For over a year, I worked as an intern at LeadsOnline; a "technology service helping law enforcement catch criminals while helping businesses reduce the hassles of reporting." While there I wrote & executed tests, fixed bugs, and worked on new code.</p>
+              <p class="font-console">The service is primarily written in C#, HTML, JavaScript, CSS, and SQL. The platform is ASP.Net MVC and uses a SQL Server database.</p>
+              <p class="font-console">Unfortunatly, I can't show you any of the actual product due to non-disclosure and confidentiality agreements.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="https://www.leadsonline.com" target="_blank"><img src="images/lol.png" style="width:500px"></a>
+            </div>
+        </div>
+
+        <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+        <div class="row">
+            <div class="col-md-6 text-left">
+              <p class="title margin-bottom-20px"><a href="http://scuidcode.com/" target="_blank">ScuidCode</a></p>
+              <p class="font-console">Designer, Developer</p>
+              <p class="font-console">This site!  The one you're looking at!</p>
+              <p class="font-console">This web site uses HTML, JavaScript, and CSS. Libraries used include jQuery, Bootstrap, and Font Awesome.</p>
+              <p class="font-console">"Scuid" is Irish for "squid".</p>
+            </div>
+            <div class="col-md-6">
+                <a href="http://squidcode.com" target="_blank"><img src="images/squidcode.png" style="width:500px"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="guitar">
+      <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <h2 class="">Guitar</h2>
+          <hr style="width:200px" class="w3-opacity">
+        </div>
+      </div>
+      <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+
+      <div class="row">
+      </div>
+    </div>
+
+    <div class="container-fluid" id="life">
+        <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+        <div class="row">
+          <div class="col-md-12 text-left">
+            <h2 class="">Life, the Universe, and Everything</h2>
+            <hr style="width:200px" class="w3-opacity">
+          </div>
+        </div>
+        <div class="row"><div class="col-md-6 top-filler"></div><div class="col-md-6 top-filler"></div></div>
+  
+        <div class="row">
+        </div>
+      </div>
+
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -95,6 +248,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
+
+<script src="js/processing.min.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>
+<script src="js/mynameis.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  mynameis.init($('#txtName')[0]);
+
+</script>
 
 </body>
 </html>
