@@ -20,6 +20,11 @@ hr {
     text-align: left;
 }
 
+.attn{
+    color: red;
+    font-weight: bold;
+}
+
 .img-me{
     max-height: 900px;
     max-width: 599px;
@@ -54,6 +59,13 @@ hr {
 }
 
 #life img{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+    max-width: 610px;
+}
+
+#art img{
     width: 100%;
     margin-bottom: 15px;
     padding: 0;
