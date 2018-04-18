@@ -71,3 +71,7 @@ hr {
     padding: 0;
     max-width: 610px;
 }
+
+.left-margin{
+    margin-left: 30px;
+}
